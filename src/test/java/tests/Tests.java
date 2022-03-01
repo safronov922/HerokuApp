@@ -7,7 +7,7 @@ import staticdata.WebUrls;
 
 public class Tests extends BaseTest {
     @Test
-    public void addRemove() {
+    public void addRemoveTest() {
         //Open page
         driver.get(WebUrls.ADD_REMOVE);
         //Add first element
