@@ -1,5 +1,4 @@
 package tests;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -22,6 +21,7 @@ public class Tests extends BaseTest {
         boolean isButtonDeleteShown = driver.findElement(By.xpath("//div[@id='elements']//button")).isDisplayed();
         Assert.assertTrue(isButtonDeleteShown, "Button don't shown");
     }
+
     @Test
     public void checkNameTest() {
         //Open page
@@ -34,6 +34,7 @@ public class Tests extends BaseTest {
         Assert.assertEquals(surname, "Bach");
         Assert.assertEquals(name, "Frank");
     }
+
     @Test
     public void checkPriceTest() {
         //Open page
@@ -46,24 +47,27 @@ public class Tests extends BaseTest {
         Assert.assertEquals(due, "$51.00");
         Assert.assertEquals(web, "http://www.frank.com");
     }
+
     @Test
-    public  void  checkFirstCheckBoxTest(){
+    public void checkFirstCheckBoxTest() {
         driver.get(WebUrls.CHECKBOXES);
         WebElement checkBox1 = driver.findElement(By.xpath("(//input)[1]"));
-        Assert.assertFalse(checkBox1.isSelected(),"Checkbox checked");
+        Assert.assertFalse(checkBox1.isSelected(), "Checkbox checked");
         driver.findElement(By.xpath("(//input)[1]")).click();
-        Assert.assertTrue(checkBox1.isSelected(),"Checkbox unchecked");
+        Assert.assertTrue(checkBox1.isSelected(), "Checkbox unchecked");
     }
+
     @Test
-    public  void checkSecondCheckBoxTest(){
+    public void checkSecondCheckBoxTest() {
         driver.get(WebUrls.CHECKBOXES);
         WebElement checkBox2 = driver.findElement(By.xpath("(//input)[2]"));
-        Assert.assertTrue(checkBox2.isSelected(),"Checkbox unchecked");
+        Assert.assertTrue(checkBox2.isSelected(), "Checkbox unchecked");
         driver.findElement(By.xpath("(//input)[2]")).click();
-        Assert.assertFalse(checkBox2.isSelected(),"Checkbox checked");
+        Assert.assertFalse(checkBox2.isSelected(), "Checkbox checked");
     }
+
     @Test
-    public  void checkDigitsEnteringTest(){
+    public void checkDigitsEnteringTest() {
         driver.get(WebUrls.INPUTS);
         WebElement input = driver.findElement(By.cssSelector("[type=\"number\"]"));
         input.sendKeys(Keys.ARROW_UP);
@@ -72,21 +76,23 @@ public class Tests extends BaseTest {
         input.sendKeys(Keys.ARROW_DOWN);
         input.sendKeys(Keys.ARROW_DOWN);
     }
+
     @Test
-    public void checkTextSpellingTest(){
+    public void checkTextSpellingTest() {
         driver.get((WebUrls.TYPOS));
         String text1 = driver.findElement(By.xpath("//h3[contains(text(),'Typos')]")).getText();
         String text2 = driver.findElement(By.xpath("(//p)[1]")).getText();
         String text3 = driver.findElement(By.xpath("(//p)[2]")).getText();
-        Assert.assertEquals(text1,"Typos");
-        Assert.assertEquals(text2,"This example demonstrates a typo being introduced. It does it randomly on each page load.");
-        Assert.assertEquals(text3,"Sometimes you'll see a typo, other times you won't.");
+        Assert.assertEquals(text1, "Typos");
+        Assert.assertEquals(text2, "This example demonstrates a typo being introduced. It does it randomly on each page load.");
+        Assert.assertEquals(text3, "Sometimes you'll see a typo, other times you won't.");
     }
+
     @Test
-    public void  checkMessageTest(){
+    public void checkMessageTest() {
         driver.get(WebUrls.NOTIFICATION_MESSAGE);
         driver.findElement(By.xpath("//a[text()='Click here']")).click();
-        String message = driver.findElement(By.xpath("//a[@class='close']/..")).getText();
-        Assert.assertEquals(message,"Action successful");
+        String message = driver.findElement(By.xpath("//a[@class='close']/..")).getText().replace("×", "").trim();
+        Assert.assertEquals(message, "Action successful");
     }
 }
