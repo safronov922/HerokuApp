@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.mustache.Value;
 import staticdata.WebUrls;
 
 public class Tests extends BaseTest {
@@ -75,6 +76,8 @@ public class Tests extends BaseTest {
         input.sendKeys(Keys.ARROW_UP);
         input.sendKeys(Keys.ARROW_DOWN);
         input.sendKeys(Keys.ARROW_DOWN);
+        String count = input.getAttribute("value");
+        Assert.assertEquals(count,"1");
     }
 
     @Test
