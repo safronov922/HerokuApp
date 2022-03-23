@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class CheckBoxesPage extends BaseTest{
+public class CheckBoxesPage extends BaseTest {
 
     private By CHECKBOX_FIRST = By.xpath("(//input)[1]");
     private By CHECKBOX_SECOND = By.xpath("(//input)[2]");
@@ -12,19 +12,24 @@ public class CheckBoxesPage extends BaseTest{
     public CheckBoxesPage(WebDriver driver) {
         super(driver);
     }
-    public void clickCheckboxFirst(){
+
+    public void clickCheckboxFirst() {
         driver.findElement(CHECKBOX_FIRST).click();
     }
-    public void clickCheckboxSecond(){
+
+    public void clickCheckboxSecond() {
         driver.findElement(CHECKBOX_SECOND);
     }
-    public void openCheckboxPage(){
+
+    public void openCheckboxPage() {
         driver.get(WebUrls.CHECKBOXES);
     }
-    public boolean getCheckBoxFirstStatus(){
+
+    public boolean getCheckBoxFirstStatus() {
         return driver.findElement(CHECKBOX_FIRST).isSelected();
     }
-    public boolean getCheckBoxSecondStatus(){
+
+    public boolean getCheckBoxSecondStatus() {
         return driver.findElement(CHECKBOX_SECOND).isSelected();
     }
 
