@@ -6,8 +6,9 @@ import org.testng.annotations.Test;
 import pages.DataTablesPage;
 import staticdata.WebUrls;
 
-public class TableDataTest extends BaseTest{
+public class TableDataTest extends BaseTest {
     DataTablesPage dataTablesPage;
+
     @Test
     public void checkNameTest() {
         DataTablesPage dataTablesPage = new DataTablesPage(driver);
@@ -21,8 +22,10 @@ public class TableDataTest extends BaseTest{
         Assert.assertEquals(surname, "Bach");
         Assert.assertEquals(name, "Frank");
     }
+
     @Test
     public void checkPriceTest() {
+        DataTablesPage dataTablesPage = new DataTablesPage(driver);
         //Open page
         dataTablesPage.openDataTablesPage();
         //Find Due

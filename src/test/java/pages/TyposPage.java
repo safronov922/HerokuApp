@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class TyposPage extends BaseTest{
+public class TyposPage extends BaseTest {
 
     private By TEXT1 = By.xpath("//h3[contains(text(),'Typos')]");
     private By TEXT2 = By.xpath("(//p)[1]");
@@ -14,16 +14,19 @@ public class TyposPage extends BaseTest{
         super(driver);
     }
 
-    public void openTyposPage(){
+    public void openTyposPage() {
         driver.get(WebUrls.TYPOS);
     }
-    public String getText1(){
+
+    public String getText1() {
         return driver.findElement(TEXT1).getText();
     }
-    public String getText2(){
+
+    public String getText2() {
         return driver.findElement(TEXT2).getText();
     }
-    public String getText3(){
+
+    public String getText3() {
         return driver.findElement(TEXT3).getText();
     }
 }

@@ -6,7 +6,7 @@ import staticdata.WebUrls;
 
 public class NotificationMessagePage extends BaseTest {
 
-    private By BUTTON = By.xpath();
+    private By BUTTON = By.xpath("//a[text()='Click here']");
     private By MESSAGE = By.xpath("//a[@class='close']/..");
 
     public NotificationMessagePage(WebDriver driver) {

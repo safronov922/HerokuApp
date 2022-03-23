@@ -18,7 +18,7 @@ public class CheckBoxesPage extends BaseTest {
     }
 
     public void clickCheckboxSecond() {
-        driver.findElement(CHECKBOX_SECOND);
+        driver.findElement(CHECKBOX_SECOND).click();
     }
 
     public void openCheckboxPage() {
@@ -32,5 +32,4 @@ public class CheckBoxesPage extends BaseTest {
     public boolean getCheckBoxSecondStatus() {
         return driver.findElement(CHECKBOX_SECOND).isSelected();
     }
-
 }

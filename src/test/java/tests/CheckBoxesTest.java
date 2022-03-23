@@ -9,6 +9,7 @@ import staticdata.WebUrls;
 
 public class CheckBoxesTest extends BaseTest {
     CheckBoxesPage checkBoxesPage;
+
     @Test
     public void checkFirstCheckBoxTest() {
         CheckBoxesPage checkBoxesPage = new CheckBoxesPage(driver);
@@ -20,6 +21,7 @@ public class CheckBoxesTest extends BaseTest {
 
     @Test
     public void checkSecondCheckBoxTest() {
+        CheckBoxesPage checkBoxesPage = new CheckBoxesPage(driver);
         checkBoxesPage.openCheckboxPage();
         Assert.assertTrue(checkBoxesPage.getCheckBoxSecondStatus(), "Checkbox unchecked");
         checkBoxesPage.clickCheckboxSecond();

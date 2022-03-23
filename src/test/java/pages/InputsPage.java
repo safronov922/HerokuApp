@@ -28,5 +28,4 @@ public class InputsPage extends BaseTest {
         driver.findElement(INPUT).sendKeys(Keys.ARROW_DOWN);
         driver.findElement(INPUT).sendKeys(Keys.ARROW_DOWN);
     }
-
 }

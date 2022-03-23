@@ -8,6 +8,7 @@ import staticdata.WebUrls;
 
 public class AddRemoveTest extends BaseTest {
     AddRemovePage addRemovePage;
+
     @Test
     public void addRemoveTest() {
         addRemovePage = new AddRemovePage(driver);
@@ -22,5 +23,4 @@ public class AddRemoveTest extends BaseTest {
         //Check button Delete shown
         Assert.assertTrue(addRemovePage.checkDeleteButton(), "Button don't shown");
     }
-
 }
