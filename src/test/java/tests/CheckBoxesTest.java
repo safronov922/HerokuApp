@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CheckBoxesPage;
 
-public class CheckBoxesTest extends BasePage {
+public class CheckBoxesTest extends BaseTest {
     CheckBoxesPage checkBoxesPage;
 
     @Test

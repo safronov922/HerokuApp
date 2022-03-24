@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DataTablesPage;
 
-public class TableDataTest extends BasePage {
+public class TableDataTest extends BaseTest {
     DataTablesPage dataTablesPage;
 
     @Test

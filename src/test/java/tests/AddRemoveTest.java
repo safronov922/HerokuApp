@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AddRemovePage;
 
-public class AddRemoveTest extends BasePage {
+public class AddRemoveTest extends BaseTest {
     AddRemovePage addRemovePage;
 
     @Test

@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.InputsPage;
 
-public class InputArrowSendingTest extends BasePage {
+public class InputArrowSendingTest extends BaseTest {
     InputsPage inputsPage;
 
     @Test

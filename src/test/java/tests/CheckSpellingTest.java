@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import pages.TyposPage;
 
 
-public class CheckSpellingTest extends BasePage {
+public class CheckSpellingTest extends BaseTest {
     TyposPage typosPage;
 
     @Test

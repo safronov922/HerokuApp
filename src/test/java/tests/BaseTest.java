@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-abstract public class BasePage {
+abstract public class BaseTest {
     WebDriver driver;
 
     @BeforeMethod
