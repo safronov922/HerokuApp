@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class TyposPage extends BaseTest {
+public class TyposPage extends BasePage {
 
     private By TEXT1 = By.xpath("//h3[contains(text(),'Typos')]");
     private By TEXT2 = By.xpath("(//p)[1]");

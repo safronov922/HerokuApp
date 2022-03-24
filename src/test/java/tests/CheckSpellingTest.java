@@ -1,12 +1,11 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.TyposPage;
 
 
-public class CheckSpellingTest extends BaseTest {
+public class CheckSpellingTest extends BasePage {
     TyposPage typosPage;
 
     @Test

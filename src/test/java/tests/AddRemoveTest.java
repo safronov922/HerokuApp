@@ -1,12 +1,10 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AddRemovePage;
-import staticdata.WebUrls;
 
-public class AddRemoveTest extends BaseTest {
+public class AddRemoveTest extends BasePage {
     AddRemovePage addRemovePage;
 
     @Test

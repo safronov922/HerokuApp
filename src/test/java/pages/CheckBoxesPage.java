@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class CheckBoxesPage extends BaseTest {
+public class CheckBoxesPage extends BasePage {
 
     private By CHECKBOX_FIRST = By.xpath("(//input)[1]");
     private By CHECKBOX_SECOND = By.xpath("(//input)[2]");

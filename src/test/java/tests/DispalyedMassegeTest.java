@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.NotificationMessagePage;
 
 
-public class DispalyedMassegeTest extends BaseTest {
+public class DispalyedMassegeTest extends BasePage {
     NotificationMessagePage notificationMessagePage;
 
     @Test

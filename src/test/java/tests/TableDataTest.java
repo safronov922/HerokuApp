@@ -1,12 +1,10 @@
 package tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.DataTablesPage;
-import staticdata.WebUrls;
 
-public class TableDataTest extends BaseTest {
+public class TableDataTest extends BasePage {
     DataTablesPage dataTablesPage;
 
     @Test

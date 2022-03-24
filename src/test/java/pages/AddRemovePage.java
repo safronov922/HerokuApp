@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class AddRemovePage extends BaseTest {
+public class AddRemovePage extends BasePage {
 
     private By ADD_ELEMENT_BUTTON = By.xpath("//button[text()='Add Element']");
     private By DELETE_BUTTON = By.xpath("//div[@id='elements']//button[last()]");

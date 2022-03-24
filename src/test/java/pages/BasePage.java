@@ -3,10 +3,10 @@ package pages;
 import org.openqa.selenium.WebDriver;
 
 
-abstract public class BaseTest {
+abstract public class BasePage {
     WebDriver driver;
 
-    public BaseTest(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 

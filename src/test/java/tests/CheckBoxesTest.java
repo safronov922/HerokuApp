@@ -1,13 +1,10 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CheckBoxesPage;
-import staticdata.WebUrls;
 
-public class CheckBoxesTest extends BaseTest {
+public class CheckBoxesTest extends BasePage {
     CheckBoxesPage checkBoxesPage;
 
     @Test

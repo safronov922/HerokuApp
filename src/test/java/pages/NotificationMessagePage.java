@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class NotificationMessagePage extends BaseTest {
+public class NotificationMessagePage extends BasePage {
 
     private By BUTTON = By.xpath("//a[text()='Click here']");
     private By MESSAGE = By.xpath("//a[@class='close']/..");

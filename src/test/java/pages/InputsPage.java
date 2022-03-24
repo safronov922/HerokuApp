@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
-public class InputsPage extends BaseTest {
+public class InputsPage extends BasePage {
 
     private By INPUT = By.cssSelector("[type=\"number\"]");
 

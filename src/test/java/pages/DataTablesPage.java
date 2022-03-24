@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import staticdata.WebUrls;
 
 
-public class DataTablesPage extends BaseTest {
+public class DataTablesPage extends BasePage {
 
     private By NAME = By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[1]");
     private By SURNAME = By.xpath("//table[@id='table1']//td[text()='fbach@yahoo.com']//preceding-sibling::td[2]");
