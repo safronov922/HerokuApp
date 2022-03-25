@@ -17,6 +17,6 @@ public class DispalyedMassegeTest extends BaseTest {
         notificationMessagePage.openNotificationPage();
         notificationMessagePage.clickButton();
         String message = notificationMessagePage.getMessage();
-        Assert.assertEquals(message, "Action successful");
+        Assert.assertEquals(message, "Action successful", "Meesage Wrong");
     }
 }
