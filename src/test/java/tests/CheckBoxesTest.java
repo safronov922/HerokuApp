@@ -9,7 +9,7 @@ public class CheckBoxesTest extends BaseTest {
 
     @Test
     public void checkFirstCheckBoxTest() {
-        CheckBoxesPage checkBoxesPage = new CheckBoxesPage(driver);
+        checkBoxesPage = new CheckBoxesPage(driver);
         checkBoxesPage.openCheckboxPage();
         Assert.assertFalse(checkBoxesPage.getCheckBoxFirstStatus(), "Checkbox checked");
         checkBoxesPage.clickCheckboxFirst();
@@ -18,7 +18,7 @@ public class CheckBoxesTest extends BaseTest {
 
     @Test
     public void checkSecondCheckBoxTest() {
-        CheckBoxesPage checkBoxesPage = new CheckBoxesPage(driver);
+        checkBoxesPage = new CheckBoxesPage(driver);
         checkBoxesPage.openCheckboxPage();
         Assert.assertTrue(checkBoxesPage.getCheckBoxSecondStatus(), "Checkbox unchecked");
         checkBoxesPage.clickCheckboxSecond();

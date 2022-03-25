@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import pages.InputsPage;
 
 public class InputArrowSendingTest extends BaseTest {
-    InputsPage inputsPage;
 
     @Test
     public void checkDigitsEnteringTest() {

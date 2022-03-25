@@ -9,7 +9,7 @@ public class TableDataTest extends BaseTest {
 
     @Test
     public void checkNameTest() {
-        DataTablesPage dataTablesPage = new DataTablesPage(driver);
+        dataTablesPage = new DataTablesPage(driver);
         //Open page
         dataTablesPage.openDataTablesPage();
         //Find Name
@@ -23,7 +23,7 @@ public class TableDataTest extends BaseTest {
 
     @Test
     public void checkPriceTest() {
-        DataTablesPage dataTablesPage = new DataTablesPage(driver);
+        dataTablesPage = new DataTablesPage(driver);
         //Open page
         dataTablesPage.openDataTablesPage();
         //Find Due

@@ -10,7 +10,7 @@ public class CheckSpellingTest extends BaseTest {
 
     @Test
     public void checkTextSpellingTest() {
-        TyposPage typosPage = new TyposPage(driver);
+        typosPage = new TyposPage(driver);
         typosPage.openTyposPage();
         String text1 = typosPage.getText1();
         String text2 = typosPage.getText2();
