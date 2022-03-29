@@ -42,8 +42,15 @@ public class JavaScriptAlertsPage extends BasePage{
         driver.findElement(JS_PROMPT_BUTTON).click();
         return this;
     }
+    public JavaScriptAlertsPage sendTextAlert(String message){
+        driver.switchTo().alert().sendKeys(message);
+        return this;
+    }
+    public JavaScriptAlertsPage clickOkButtonPromptAlert(){
+        driver.switchTo().alert().accept();
+        return this;
+    }
     public String getAlertPromptText(){
-        driver.switchTo().alert().sendKeys("Hello");
         String text = driver.findElement(PROMPT_TEXT).getText();
         return text;
     }
