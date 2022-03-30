@@ -16,9 +16,11 @@ public class SelectPage extends BasePage {
         driver.get(WebUrls.DROPDAWN_URL);
         return this;
     }
-//    public SelectPage chooseElements(){
-//        Select select = new Select(driver.findElement(SELECTOR));
-//        select.
+
+    public int findAllElements() {
+        Select select = new Select(driver.findElement(SELECTOR));
+        return select.getOptions().size();
+    }
 
     public boolean chooseFirstElement() {
         Select select = new Select(driver.findElement(SELECTOR));

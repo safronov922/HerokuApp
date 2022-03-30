@@ -7,9 +7,9 @@ import pages.DrugPage;
 
 public class DragTest extends BaseTest {
     @Test
-    public void dragAndDropTest(){
+    public void dragAndDropTest() {
         DrugPage drugPage = new DrugPage(driver);
         String text = drugPage.openPage().dragFile().getDragText();
-        Assert.assertEquals(text,"Dropped!", "Message wrong");
+        Assert.assertEquals(text, "Dropped!", "Message wrong");
     }
 }

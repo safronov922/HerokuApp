@@ -24,10 +24,11 @@ public class AlertsTest extends BaseTest {
                 .openJsAlertPage()
                 .clickButtonJsConfirm()
                 .getAlertConfirmText();
-        Assert.assertEquals(actualText, "I am a JS Confirm","Message unexpected");
+        Assert.assertEquals(actualText, "I am a JS Confirm", "Message unexpected");
     }
+
     @Test
-    public void checkTextSendingAlert(){
+    public void checkTextSendingAlert() {
         javaScriptAlertsPage = new JavaScriptAlertsPage(driver);
         String actualText = javaScriptAlertsPage
                 .openJsAlertPage()
@@ -35,7 +36,6 @@ public class AlertsTest extends BaseTest {
                 .sendTextAlert("Hello")
                 .clickOkButtonPromptAlert()
                 .getAlertPromptText();
-        Assert.assertEquals(actualText,"You entered: Hello", "Message unexpected");
+        Assert.assertEquals(actualText, "You entered: Hello", "Message unexpected");
     }
-
 }
